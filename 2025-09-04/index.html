@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2025-09-04</title>
+    <link rel="stylesheet" href="@@internal/reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⧉</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <svg>
+      <filter id="filter-noise">
+        <feTurbulence type="fractalNoise" result="noise" baseFrequency="0 0" />
+        <feDisplacementMap
+          in="SourceGraphic"
+          in2="noise"
+          scale="30"
+          xChannelSelector="R"
+          yChannelSelector="R"
+        />
+      </filter>
+    </svg>
+    <button>
+      <span>Start</span>
+      <svg class="btn-border" viewBox="0 0 110 39" fill="none">
+        <path
+          d="M11.7744 2L6.80264 6.9718L2 11.8927V24.5V36.7499H96.3231L107.053 26.2092V2H11.7744ZM0.146595 10.9784C0.188876 10.9037 0.241233 10.8333 0.303662 10.7693L5.41422 5.53293L5.42272 5.52422L5.42277 5.52428L10.6037 0.343386C10.7549 0.192184 10.9411 0.100786 11.1347 0.068818C11.2479 0.024394 11.3711 0 11.5 0H107.5C107.517 0 107.533 0.000410072 107.55 0.0012207H109.053V26.5C109.053 26.8178 108.904 27.101 108.673 27.2841C108.623 27.4211 108.542 27.5489 108.432 27.657L97.6815 38.2187C97.5374 38.3602 97.3626 38.4481 97.1803 38.4829C97.0018 38.6486 96.7627 38.7499 96.5 38.7499H1.31314C1.00483 38.7499 0.729115 38.6104 0.545677 38.391C0.221763 38.2256 0 37.8887 0 37.5V24.5V11.5C0 11.3089 0.0536036 11.1303 0.146595 10.9784Z"
+        />
+      </svg>
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@latest/dist/gsap.min.js"></script>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="@@internal/codepen-prefill.js"></script>
+  </body>
+</html>

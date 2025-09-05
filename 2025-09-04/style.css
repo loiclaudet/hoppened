@@ -1,0 +1,48 @@
+:root {
+  --color-green: #43ffc0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100svh;
+  width: 100%;
+  background-color: black;
+}
+
+button {
+  position: relative;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  font-size: clamp(44px, 8vw, 88px);
+  background-color: transparent;
+  border: 0;
+  color: beige;
+
+  & span {
+    display: inline-block;
+    transform: scale(0.7);
+    text-shadow: 0px 0px 10px var(--color-green);
+    filter: drop-shadow(0px 0px 20px var(--color-green));
+  }
+}
+
+svg.btn-border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: calc(100% - clamp(8px, 1.5vw, 16px));
+  height: calc(100% - clamp(8px, 1.5vw, 16px));
+  pointer-events: none;
+  fill: var(--color-green);
+  stroke: var(--color-green);
+  stroke-width: 1;
+  filter: drop-shadow(0px 0px 8px var(--color-green));
+}
+
+svg:has(#filter-noise) {
+  position: absolute;
+  left: -9999px;
+}
