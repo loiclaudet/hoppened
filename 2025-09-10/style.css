@@ -1,0 +1,21 @@
+body {
+  height: 400lvh;
+  padding: 50lvh 0;
+}
+
+section {
+  display: grid;
+  height: 100lvh;
+  clip-path: inset(0% 0%);
+  will-change: clip-path;
+}
+
+img {
+  grid-area: 1 / 1;
+  opacity: 0;
+  will-change: opacity;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
